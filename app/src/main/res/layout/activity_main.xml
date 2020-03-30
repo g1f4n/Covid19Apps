@@ -30,12 +30,14 @@
         android:orientation="vertical">
 
         <EditText
-            android:id="@+id/editText"
+            android:id="@+id/namaLengkap"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="5dp"
             android:ems="10"
+            android:hint="Nama Lengkap"
             android:inputType="textPersonName"
-            android:text="Nama Lengkap" />
+            android:paddingLeft="5dp" />
 
     </LinearLayout>
 
@@ -45,17 +47,22 @@
         android:orientation="horizontal">
 
         <EditText
-            android:id="@+id/editText2"
+            android:id="@+id/umur"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_margin="5dp"
             android:ems="10"
+            android:hint="Umur"
             android:inputType="textPersonName"
-            tools:text="Umur" />
+            android:paddingLeft="5dp" />
 
         <Spinner
-            android:id="@+id/spinner"
+            android:id="@+id/jenis_kelamin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:entries="@array/jenis_kelamin"
+            android:paddingLeft="5dp"
             android:spinnerMode="dropdown" />
 
     </LinearLayout>
@@ -66,25 +73,30 @@
         android:orientation="vertical">
 
         <EditText
-            android:id="@+id/editText4"
+            android:id="@+id/kota"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="5dp"
             android:ems="10"
+            android:hint="Kota Domisili"
             android:inputType="textPersonName"
-            tools:text="Kota Domisili" />
+            android:paddingLeft="5dp" />
 
         <EditText
-            android:id="@+id/editText5"
+            android:id="@+id/telp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="5dp"
             android:ems="10"
-            android:inputType="textPersonName"
-            tools:text="No Telepon yang bisa di hubungi" />
+            android:hint="No Telepon yang bisa di hubungi"
+            android:inputType="phone"
+            android:paddingLeft="5dp" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/btnRegistrasi"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="5dp"
             android:text="Registrasi" />
     </LinearLayout>
 

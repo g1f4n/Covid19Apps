@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Status">
+
+    <Button
+        android:id="@+id/kembali1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Kembali" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Apakah anda mengalami gejala sbb?"
+        android:textSize="18sp" />
+
+    <CheckBox
+        android:id="@+id/bersin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="Bersin - Bersin" />
+
+    <CheckBox
+        android:id="@+id/batuk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="Batuk Kering" />
+
+    <CheckBox
+        android:id="@+id/nyeriOtot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="Nyeri Otot, Kelelahan" />
+
+    <CheckBox
+        android:id="@+id/demam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="Demam/Meriang" />
+
+    <CheckBox
+        android:id="@+id/nafas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="Kesulitan Bernafas" />
+
+    <Button
+        android:id="@+id/updateStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update Status Kesehatan Saya" />
+</LinearLayout>

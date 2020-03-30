@@ -7,20 +7,21 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
-    Button btnRegistrasi;
+public class Status extends AppCompatActivity {
+
+    Button updateStatus;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_status);
 
-        btnRegistrasi = findViewById(R.id.btnRegistrasi);
+        updateStatus = findViewById(R.id.updateStatus);
 
-        btnRegistrasi.setOnClickListener(new View.OnClickListener() {
+        updateStatus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(MainActivity.this, Condition.class);
+                Intent i = new Intent(Status.this, ConfirmationStatus.class);
                 startActivity(i);
             }
         });
